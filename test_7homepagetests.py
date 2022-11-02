@@ -66,6 +66,8 @@ class HomePageTest(unittest.TestCase):
         except NoSuchElementException as exception:
             print("element not present")
             print("India employe new  is changing code")
+            print("US employe new  is changing code")
+            print("US employe new  is changing code")
 ##        print(shopping_cart_status)
 ##        self.assertEqual("Your Amazon Cart is empty.", shopping_cart_status)
 
