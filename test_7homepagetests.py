@@ -39,6 +39,7 @@ class HomePageTest(unittest.TestCase):
             self.driver.find_element(By.XPATH, "//div[normalize-space()='EN']")
         except NoSuchElementException as exception:
             print("element not present")
+            print("mahendra is presenting")
         
     def test_shopping_cart_empty_message(self):
             # check content of My Shopping Cart block on Home page
@@ -47,7 +48,7 @@ class HomePageTest(unittest.TestCase):
             shopping_cart_status =self.driver.find_element(By.XPATH, "//h1[normalize-space()='Your Amazon Cart is empty.']").text
         except NoSuchElementException as exception:
             print("element not present")
-            print("mahenda is changing code")
+            print("usa employe is changing code")
 ##        print(shopping_cart_status)
 ##        self.assertEqual("Your Amazon Cart is empty.", shopping_cart_status)
 
