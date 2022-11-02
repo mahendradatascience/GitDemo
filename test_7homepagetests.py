@@ -30,6 +30,7 @@ class HomePageTest(unittest.TestCase):
             self.driver.find_element(By.XPATH, "//input[@id='twotabsearchtextbox']")
         except NoSuchElementException as exception:
             print("element not present")
+            print("India employe mahendra  is changing code")
            
         
 
@@ -48,7 +49,7 @@ class HomePageTest(unittest.TestCase):
             shopping_cart_status =self.driver.find_element(By.XPATH, "//h1[normalize-space()='Your Amazon Cart is empty.']").text
         except NoSuchElementException as exception:
             print("element not present")
-            print("usa employe is changing code")
+            print("India employe new  is changing code")
 ##        print(shopping_cart_status)
 ##        self.assertEqual("Your Amazon Cart is empty.", shopping_cart_status)
 
