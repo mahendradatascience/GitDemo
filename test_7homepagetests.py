@@ -50,6 +50,22 @@ class HomePageTest(unittest.TestCase):
         except NoSuchElementException as exception:
             print("element not present")
             print("India employe new  is changing code")
+    def test_shopping_cart_empty_message(self):
+            # check content of My Shopping Cart block on Home page
+        shopping_cart_icon =self.driver.find_element(By.XPATH, "//span[@id='nav-cart-count']").click()
+        try:
+            shopping_cart_status =self.driver.find_element(By.XPATH, "//h1[normalize-space()='Your Amazon Cart is empty.']").text
+        except NoSuchElementException as exception:
+            print("element not present")
+            print("India employe new  is changing code")
+    def test_shopping_cart_empty_message(self):
+            # check content of My Shopping Cart block on Home page
+        shopping_cart_icon =self.driver.find_element(By.XPATH, "//span[@id='nav-cart-count']").click()
+        try:
+            shopping_cart_status =self.driver.find_element(By.XPATH, "//h1[normalize-space()='Your Amazon Cart is empty.']").text
+        except NoSuchElementException as exception:
+            print("element not present")
+            print("India employe new  is changing code")
 ##        print(shopping_cart_status)
 ##        self.assertEqual("Your Amazon Cart is empty.", shopping_cart_status)
 
