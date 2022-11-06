@@ -25,7 +25,7 @@ class HomePageTest(unittest.TestCase):
     def tearDownClass(cls):
         print("tearDownClass executed")
         cls.driver.quit()
-    def test_search_filled_exist(self): # cheak search field exit on home page
+    def test_search_filled_exist1(self): # cheak search field exit on home page
         try:
             self.driver.find_element(By.XPATH, "//input[@id='twotabsearchtextbox']")
         except NoSuchElementException as exception:
